@@ -210,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* ── Services ─────────────────────────────────────── */}
-      <section style={{ background: 'var(--color-surface)', padding: '96px 0' }}>
+      <section style={{ background: 'transparent', padding: '96px 0' }}>
         <div className="container">
           <motion.div
             variants={fade} initial="hidden" whileInView="show"
@@ -286,7 +286,7 @@ export default function Home() {
       </section>
 
       {/* ── About / Stats ─────────────────────────────────── */}
-      <section style={{ background: 'var(--color-bg)', padding: '96px 0' }}>
+      <section style={{ background: 'transparent', padding: '96px 0' }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Image side */}
@@ -361,7 +361,7 @@ export default function Home() {
       </section>
 
       {/* ── Testimonials ─────────────────────────────────── */}
-      <section style={{ background: '#111111', padding: '96px 0' }}>
+      <section style={{ background: 'transparent', padding: '96px 0' }}>
         <div className="container">
           <motion.div
             variants={fade} initial="hidden" whileInView="show"
@@ -452,7 +452,7 @@ export default function Home() {
       </section>
 
       {/* ── Owner Photo ──────────────────────────────────── */}
-      <section style={{ background: 'var(--color-surface)', padding: '96px 0' }}>
+      <section style={{ background: 'transparent', padding: '96px 0' }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div

@@ -12,9 +12,13 @@ function ScrollToTop() {
 export default function Layout() {
   return (
     <>
+      <div className="ambient-orbs-container">
+        <div className="orb orb-1" />
+        <div className="orb orb-2" />
+      </div>
       <ScrollToTop />
       <Navbar />
-      <main style={{ flex: 1 }}>
+      <main style={{ flex: 1, position: 'relative', zIndex: 1 }}>
         <Outlet />
       </main>
       <Footer />

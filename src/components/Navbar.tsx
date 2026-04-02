@@ -38,8 +38,8 @@ export default function Navbar() {
   }, [])
 
   const navBg = scrolled
-    ? 'bg-[#111111] shadow-lg'
-    : 'bg-black/40 backdrop-blur-sm'
+    ? 'glass-nav shadow-none'
+    : 'bg-transparent backdrop-blur-none'
 
   const linkBase = 'px-4 py-2 text-base font-semibold tracking-wide transition-colors duration-200 rounded'
   const linkActive = 'text-[#CE2026] underline underline-offset-4'
@@ -100,7 +100,7 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-1 w-52 bg-[#111111] border border-white/10 rounded-lg shadow-xl overflow-hidden"
+                    className="absolute top-full left-0 mt-1 w-52 glass-panel rounded-lg overflow-hidden"
                     style={{ zIndex: 100 }}
                   >
                     {serviceLinks.map(({ to, label }) => (
@@ -164,7 +164,7 @@ export default function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden bg-[#111111] border-t border-white/10 overflow-hidden"
+            className="lg:hidden glass-nav border-t border-white/10 overflow-hidden"
           >
             <div className="container py-4 flex flex-col gap-1">
               <NavLink
